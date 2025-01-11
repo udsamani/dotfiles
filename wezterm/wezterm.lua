@@ -107,7 +107,7 @@ config.enable_scroll_bar = true
 config.enable_wayland = true
 
 config.font = wezterm.font("CaskaydiaMono NF")
-config.font_size = 12.0
+config.font_size = 16.0
 config.hide_tab_bar_if_only_one_tab = true
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 2000 }
 config.mouse_bindings = {
@@ -123,7 +123,7 @@ config.scrollback_lines = 5000
 config.use_dead_keys = false
 config.warn_about_missing_glyphs = false
 config.window_decorations = 'RESIZE'
-config.default_prog = { '/opt/homebrew/bin/nu', '--config', '~/.config/nu/config.nu' }
+config.default_prog = { '/opt/homebrew/bin/nu', '--config', '~/.config/nu/config.nu', '--env-config', '~/.config/nu/env.nu' }
 config.macos_window_background_blur = 30
 config.window_close_confirmation = 'NeverPrompt'
 config.window_padding = {

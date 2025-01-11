@@ -891,3 +891,5 @@ $env.config = {
 
 source ~/.config/nu/env.nu
 source ~/.config/oh-my-posh/prompt.nu
+source ~/.config/zoxide/zoxide.nu
+source ~/.config/nu/alias.nu
