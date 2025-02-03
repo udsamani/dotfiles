@@ -103,3 +103,6 @@ $env.NU_PLUGIN_DIRS = [
 # source ($nu.default-config-dir | path join 'custom.nu')
 $env.PATH = ($env.PATH | split row ':' | prepend "/opt/homebrew/bin")
 $env.PATH = ($env.PATH | split row ':' | prepend ("~/.cargo/bin" | path expand))
+$env.PATH = ($env.PATH | split row ':' | prepend ("~/.local/share/solana/install/active_release/bin" | path expand))
+$env.PATH = ($env.PATH | split row ':' | prepend ("/opt/podman/bin" | path expand))
+$env.DOCKER_HOST = $"unix://(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')"

@@ -1,16 +1,11 @@
-keybind = cmd+s>x=close_surface
-keybind = cmd+s>r=reload_config
-keybind = cmd+s>n=new_window
 
-font-family = BerkeleyMono Nerd Font
-#font-family = Iosevka Nerd Font
-# font-family = SFMono Nerd Font 
-font-size = 12
-theme = GruvboxDarkHard
-shell-integration-features = no-cursor,sudo,no-title
-cursor-style = block
-adjust-cell-height = 35%
-# background-opacity = 0.96
+font-family =  "Maple Mono NF"
+font-family-bold = "Maple Mono NF Medium"
+font-family-italic = "Maple Mono NF Book Italic"
+font-family-bold-italic = "Maple Mono NF Medium Italic"
+font-size = 14
+theme = citruszest 
+background-opacity = 0.96
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
