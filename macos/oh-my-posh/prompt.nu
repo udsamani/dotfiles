@@ -1,7 +1,7 @@
 $env.config = ($env.config | upsert render_right_prompt_on_last_line true)
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
-$env.POSH_THEME = "/Users/ud/dotfiles/oh-my-posh/amro.omp.json"
+$env.POSH_THEME = "/Users/ud/dotfiles/macos/oh-my-posh/amro.omp.json"
 $env.PROMPT_INDICATOR = ""
 $env.POSH_PID = (random uuid)
 $env.POSH_SHELL_VERSION = (version | get version)
@@ -45,8 +45,13 @@ if "false" == "true" {
     }
 }
 
-if "false" == "true" {
-    echo ""
+if "true" == "true" {
+    echo "
+A new release of Oh My Posh is available: v21.17.0 → v24.19.0
+To upgrade, run: 'oh-my-posh upgrade'
+
+To enable automated upgrades, set 'auto_upgrade' to 'true' in your configuration.
+"
 }
 
 if "false" == "true" {

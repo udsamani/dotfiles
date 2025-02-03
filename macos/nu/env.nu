@@ -102,3 +102,4 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 $env.PATH = ($env.PATH | split row ':' | prepend "/opt/homebrew/bin")
+$env.PATH = ($env.PATH | split row ':' | prepend ("~/.cargo/bin" | path expand))

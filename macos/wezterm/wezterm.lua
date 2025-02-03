@@ -1,28 +1,9 @@
 local os = require 'os'
 local wezterm = require 'wezterm'
-local session_manager = require 'wezterm-session-manager/session-manager'
 local act = wezterm.action
 local mux = wezterm.mux
 
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
-
--- Functions & Event Bindings
-
-wezterm.on("save_session", function(window)
-    session_manager.save_state(window)
-end)
-
-wezterm.on("load_session", function(window)
-    session_manager.load_state(window)
-end)
-
-wezterm.on("window_close", function(window)
-    session_manager.save_state(window)
-end)
-
-wezterm.on("restore_session", function(window)
-    session_manager.restore_state(window)
-end)
 
 -- Wezterm <-> nvim pane navigation
 -- You will need to install https://github.com/aca/wezterm.nvim
@@ -371,22 +352,6 @@ config.keys = {
         },
     },
 
-    -- Session manager bindings
-    {
-        key = 's',
-        mods = 'LEADER|SHIFT',
-        action = act({ EmitEvent = "save_session" }),
-    },
-    {
-        key = 'L',
-        mods = 'LEADER|SHIFT',
-        action = act({ EmitEvent = "load_session" }),
-    },
-    {
-        key = 'R',
-        mods = 'LEADER|SHIFT',
-        action = act({ EmitEvent = "restore_session" }),
-    },
 }
 
 bar.apply_to_config(config)
