@@ -1,0 +1,322 @@
+{
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "/opt/homebrew/bin/ny": {
+            "path": "/bin/bash",
+            "args": [
+                "-l"
+            ]
+        },
+        "nu": {
+            "path": "/opt/homebrew/bin/nu",
+            "args": [
+                "--config",
+                "~/.config/nushell/config.nu"
+            ]
+        }
+    },
+    "rust-analyzer.cargo.sysroot": "discover",
+    "rust-analyzer.procMacro.enable": false,
+    "terminal.external.osxExec": "WezTerm.app",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "go.gopath": "/Users/ud/go",
+    "go.goroot": "/opt/homebrew/Cellar/go/1.24.1/libexec/",
+    "workbench.iconTheme": "a-file-icon-vscode",
+    "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "files.autoSave": "afterDelay",
+    "vim.leader": "<space>",
+    "vim.foldfix": true,
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "e"
+            ],
+            "commands": [
+                "cursorBottom"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "d"
+            ],
+            "commands": [
+                "workbench.view.debug"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "workbench.extensions.action.showEnabledExtensions"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "commands": [
+                "cursorLineEnd"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "s"
+            ],
+            "commands": [
+                "editor.action.accessibleViewGoToSymbol"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "o",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.showEditorsInActiveGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "a"
+            ],
+            "commands": [
+                "workbench.action.showAllSymbols"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "z",
+                "c"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "c"
+            ],
+            "commands": [
+                "editor.fold"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "o"
+            ],
+            "commands": [
+                "editor.unfold"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "z",
+                "o"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.toggleStatusbarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "c"
+            ],
+            "commands": [
+                "breadcrumbs.toggle"
+            ]
+        }
+    ],
+
+    /* Workbench Settings */
+    "workbench.editor.showTabs": "none",
+    "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "right",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "scm.diffDecorations": "none",
+
+    /* Editor Configuration */
+    "editor.fontFamily": "CaskaydiaMono NFM",
+    "editor.lineNumbers": "off",
+    "editor.emptySelectionClipboard": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.minimap.enabled": false,
+    "editor.hover.enabled": true,
+    "editor.matchBrackets": "never",
+    "workbench.tips.enabled": false,
+    "editor.colorDecorators": false,
+    "git.decorations.enabled": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": "off",
+    "problems.decorations.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "window.commandCenter": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "git.openRepositoryInParentFolders": "always",
+    "makefile.configureOnOpen": true,
+    "go.toolsManagement.autoUpdate": true,
+
+    /* Window Settings */
+    "window.customTitleBarVisibility": "never",
+    "window.titleBarStyle": "custom",
+    "update.mode": "manual",
+    "python.pythonPath": "/Users/ud/workspace/trading-strateg-ai/trading-strategy-ai/bin/python",
+    "explorer.confirmDelete": false,
+    "[lua]": {
+        "editor.defaultFormatter": "yinfei.luahelper"
+    },
+    "custom-ui-style.electron": {
+    "frame": false,
+    // Disable rounded corners (MacOS)
+    //  - https://www.electronjs.org/docs/latest/api/base-window#new-basewindowoptions
+    //  - "Whether frameless window should have rounded corners on MacOS"
+    //  - "Setting this property to false will prevent the window from being fullscreenable"
+    "roundedCorners": true,
+},
+"vscode_custom_css.imports": [
+
+],
+"terminal.integrated.gpuAcceleration": "off",
+"gitlens.views.commitDetails.files.layout": "tree",
+"typescript.updateImportsOnFileMove.enabled": "always",
+"breadcrumbs.enabled": false,
+"editor.stickyScroll.scrollWithEditor": false,
+"workbench.tree.enableStickyScroll": false,
+"editor.stickyScroll.enabled": false,
+"zenMode.showTabs": "none",
+"vscode_vibrancy.enableAutoTheme": true,
+"vscode_vibrancy.theme": "Default Dark",
+"vscode_vibrancy.opacity": 0.5,
+"vscode_vibrancy.refreshInterval": 100,
+"workbench.statusBar.visible": false,
+}
+
