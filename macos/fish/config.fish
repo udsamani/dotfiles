@@ -1,3 +1,6 @@
+/opt/homebrew/bin/brew shellenv | source
+source "$HOME/.cargo/env.fish"
+
 if status is-interactive
     if type -q zoxide
         zoxide init fish | source
@@ -16,9 +19,12 @@ fish_add_path /usr/local/bin /opt/hombrew/bin /opt/homebrew/sbin
 fish_add_path "$HOME/.cargo/bin"
 fish_add_path "$HOME/.local/share/solana/install/active_release/bin"
 fish_add_path /opt/podman/bin
+fish_add_path "$HOME/.local/share/solana/install/active_release/bin"
 
 set -x EDITOR nvim
 set -x DOCKER_HOST "unix://"(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')
+set -x DOCKER_CONFIG "$HOME/.docker"
+set -x PROTOC /opt/homebrew/bin/protoc
 
 # Rust Setup
 if test -f "$HOME/.cargo/env.fish"

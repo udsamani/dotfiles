@@ -4,18 +4,19 @@ font-family-bold = "Maple Mono NF Medium"
 font-family-italic = "Maple Mono NF Book Italic"
 font-family-bold-italic = "Maple Mono NF Medium Italic"
 font-size = 14
-theme = citruszest 
-background-opacity = 0.96
+theme = 0x96f
+
+background-opacity = 0.9
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
+command = /opt/homebrew/bin/fish --login --interactive
 
-window-padding-balance = true 
+window-padding-balance = true
 window-save-state = always
 macos-titlebar-style=transparent
 window-colorspace = "display-p3"
-background = 1C2021
-# foreground = d4be98
+window-theme = auto
 
 # keybindings
 keybind = cmd+s>r=reload_config
@@ -23,7 +24,7 @@ keybind = cmd+s>x=close_surface
 
 keybind = cmd+s>n=new_window
 
-# tabs 
+# tabs
 keybind = cmd+s>c=new_tab
 keybind = cmd+s>shift+l=next_tab
 keybind = cmd+s>shift+h=previous_tab
