@@ -1,0 +1,66 @@
+[
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
+    "bindings": {
+      "space a c": "agent::ToggleFocus",
+      "space g s": "git_panel::ToggleFocus",
+      "space c z": "workspace::ToggleCenteredLayout",
+      "g l": "editor::MoveToEndOfLine"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting &&!menu",
+    "bindings": {
+      // Window Movements KeyBindings
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+
+      // Language Server Protocol
+      "space c a": "editor::ToggleCodeActions",
+      "space c r": "editor::Rename",
+      "g d": "editor::GoToDefinition",
+      "g D": "editor::GoToDefinitionSplit",
+      "g i": "editor::GoToImplementation",
+      "g I": "editor::GoToImplementationSplit",
+      "g t": "editor::GoToTypeDefinition",
+      "g T": "editor::GoToTypeDefinitionSplit",
+      "g r": "editor::FindAllReferences",
+      "s s": "outline::Toggle",
+
+      // Buffers
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-q": "pane::CloseActiveItem",
+      "space b d": "pane::CloseActiveItem",
+      "space b o": "pane::CloseInactiveItems",
+      "ctrl-s": "workspace::Save",
+      "space f": "file_finder::Toggle",
+      "space e": "project_panel::ToggleFocus",
+
+      // Code Folding
+      "space z c": "editor::FoldAll",
+      "space z o": "editor::UnfoldAll"
+    }
+  },
+  // Better Escape Mode
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-b": "workspace::ToggleRightDock"
+    }
+  }
+]

@@ -1,0 +1,21 @@
+theme = "base16_transparent"
+
+[editor]
+line-number = "relative"
+mouse = false
+auto-pairs = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+
+
+[keys.insert]
+j = { k = "normal_mode" }

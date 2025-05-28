@@ -1,4 +1,28 @@
 {
-
-  "vim_mode": true
+  "agent": {
+    "model_parameters": [],
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "theme": "Gruvbox Dark",
+  "vim_mode": true,
+  "features": {
+    "edit_prediction_provider": "supermaven"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "tab_bar": {
+    "show": false
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "right"
+  },
+  "experimental.theme_overrides": {
+    "background.appearance": "blurred"
+  }
 }
